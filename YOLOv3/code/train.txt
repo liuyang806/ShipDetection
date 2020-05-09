@@ -1,0 +1,5 @@
+build\darknet\x64\darknet.exe detector train .\cfg\ship.data .\cfg\yolov3-ship.cfg backup\yolov3-ship_last.weights >> yolov3.log -map
+build\darknet\x64\darknet.exe detector train .\cfg\ship.data .\cfg\yolov3-ship.cfg .\build\darknet\x64\darknet53.conv.74 >> yolov3.log
+
+测试
+build\darknet\x64\darknet.exe detector test .\cfg\ship.data .\cfg\yolov3-ship.cfg backup\yolov3-ship_final.weights
