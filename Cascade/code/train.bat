@@ -1,0 +1,2 @@
+opencv_traincascade.exe -data xml0.5 -vec pos.vec -bg neg.txt -numPos 350 -numNeg 800 -numStages 20 -precalcValBufSize 2048 -precalcIdxBufSize 1024 -w 45 -h 45 -minHitRate 0.995 -maxFalseAlarmRate 0.5 -weightTrimRate 0.95 -featureType LBP
+pause
