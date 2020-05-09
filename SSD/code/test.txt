@@ -1,0 +1,19 @@
+python tf_convert_data.py --dataset_name=pascalvoc --dataset_dir=./VOC2007/ --output_name=voc_2007_test --output_dir=./tfrecords/test
+
+
+验证精度测试
+# -*- coding: UTF-8 -*-
+DATASET_DIR=./tfrecords/test/    #保存的转换为tfrcodes格式的数据
+EVAL_DIR=./log_eval/   # Directory where the results are saved to    
+CHECKPOINT_PATH=./log/model.ckpt-40000   #换为自己训练的模型
+python ./eval_ssd_network.py \
+        --eval_dir=${EVAL_DIR} \
+        --dataset_dir=${DATASET_DIR} \
+        --dataset_name=pascalvoc_2007 \
+        --dataset_split_name=test \
+        --model_name=ssd_300_vgg \
+        --checkpoint_path=${CHECKPOINT_PATH} \
+        --batch_size=1
+
+
+python ./eval_ssd_network.py --eval_dir=./log_eval/ --dataset_dir=./tfrecords/test/ --dataset_name=pascalvoc_2007 --dataset_split_name=test --model_name=ssd_300_vgg --checkpoint_path=./train_models/model.ckpt-40000 --batch_size=1
