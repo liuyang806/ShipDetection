@@ -1,0 +1,3 @@
+python ./flow --model cfg/yolo-3c.cfg --load bin/yolo.weights --train --annotation train/Annotations --dataset train/Images --gpu 1.0
+
+python ./flow --model cfg/yolo-3c.cfg --load -1 --train --annotation train/Annotations --dataset train/Images --gpu 1.0

@@ -1,0 +1,5 @@
+classes= 1
+train  = train_file.txt
+valid  = valid_file.txt
+names = data/ship.names
+backup = backup/
