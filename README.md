@@ -12,8 +12,8 @@
 * Faster R-CNN 、YOLOv2模型的训练均使用VOC格式的训练集数据，通过原始SAR图像数据直接进行训练
 * YOLOv3利用已有数据集基础上生成YOLO的txt标注文件来标注每张图像中舰船的为位置信息
 * SSD通过原始数据集生成.tfrecord文件，用于模型训练  
-![image](https://github.com/liuyang806/ShipDetection/SARimg.png)
-![image](https://github.com/liuyang806/ShipDetection/SARxml.png)
+![image](https://github.com:liuyang806/ShipDetection/SARimg.png)
+![image](https://github.com:liuyang806/ShipDetection/SARxml.png)
 ## 运行环境
 1.硬件环境
 
