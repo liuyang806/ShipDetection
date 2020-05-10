@@ -41,6 +41,7 @@ SSD|tensorflow-gpu 1.13.1
 ### Faster R-CNN
 
 参数名|配置
+----|----
 weight_decay|0.0005
 learning_rate|0.001
 step_size|30000
@@ -52,6 +53,7 @@ momentum|0.9
 ### YOLOv2
 
 参数名|配置
+----|----
 weight_decay|0.0005
 learning_rate|0.0001
 steps|30000,45000
@@ -63,6 +65,7 @@ momentum|0.9
 ### YOLOv3
 
 参数名|配置
+----|----
 weight_decay|0.0005
 learning_rate|0.001
 steps|40000,45000
@@ -74,6 +77,7 @@ momentum|0.9
 ### SSD
 
 参数名|配置
+----|----
 weight_decay|0.0005
 learning_rate|0.001
 batch_size|8
